@@ -10,7 +10,7 @@ const Home = () => {
       <div className='mainContainer'>
         <div className='sidebar'>
             {items.map((item) => (
-              <div>
+              <div key={item.id}>
                 <Link to={`/contacts/${item.id}`}>{item.name}</Link>{" "}
               </div>
             ))}
